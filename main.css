@@ -109,6 +109,14 @@ nav a {
   text-decoration: none;
 }
 
+nav a:focus, nav a:hover {
+
+background-color: #fff;
+color: #0066B9;
+outline: none;
+
+}
+
 .main-nav-left {
 
   width: 100%;
@@ -138,6 +146,7 @@ input {
   padding: 0.5em;
   border: 0;
   border-radius: 4px 0 0 4px;
+  background-color: #f9f9f9;
 
 }
 
@@ -145,6 +154,14 @@ input::placeholder {
 
   color: #6d6d6d;
 
+}
+
+input:focus {
+
+  outline-color: #b8296d;
+  outline-style: solid;
+  outline-width: 4px;
+  z-index: 1;
 }
 
 form button {
