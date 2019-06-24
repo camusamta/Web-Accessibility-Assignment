@@ -1,3 +1,8 @@
+* {
+
+  box-sizing: border-box;
+}
+
 html {
   font-size: 100%;
   font-family: 'Open Sans', sans-serif;
@@ -17,7 +22,7 @@ header {
   justify-content: center;
   background-color: #132e4f;
   padding: 1em 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .wrapper {
@@ -43,14 +48,18 @@ header {
 
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .helpful-links-container li, nav li {
 
-  list-style: none;
   display: inline-flex;
-  margin-left: 1em;
 
+}
+
+.helpful-links-container li {
+
+    margin-left: 1em;
 
 }
 
@@ -78,7 +87,72 @@ header a:focus {
 
 nav {
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 60px;
   width: 100%;
   background-color: #00467f;
+}
+
+
+nav a {
+
+  font-size: 1.25rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.833em;
+  /* box-sizing: border-box; */
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.main-nav-left {
+
+  width: 100%;
+}
+
+.main-nav-item:last-child {
+
+float: right;
+
+}
+
+.main-nav-right form {
+
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+
+}
+
+input {
+
+  font-size: 1rem;
+  height: 40px;
+  width: 65%;
+  color: #343434;
+  padding: 0.5em;
+  border: 0;
+  border-radius: 4px 0 0 4px;
+
+}
+
+input::placeholder {
+
+  color: #6d6d6d;
+
+}
+
+form button {
+
+border: 0;
+height: 40px;
+width: 48px;
+background-color: #0066B9;
+border-radius: 0 4px 4px 0;
+
 }
