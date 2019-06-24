@@ -1,3 +1,35 @@
 html {
   font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+
+  margin: 0;
+}
+
+header {
+
+  background-color: blue;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #132e4f;
+}
+
+.wrapper {
+
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+
+  width: 180px;
+
+}
+
+.helpful-links-container {
+
 }
