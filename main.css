@@ -26,6 +26,18 @@ header {
   /* box-sizing: border-box; */
 }
 
+h2 {
+
+  font-size: 1.625rem;
+  font-weight: 600;
+
+}
+
+p {
+
+  line-height: 1.5;
+}
+
 .wrapper {
 
   width: 1140px;
@@ -231,7 +243,7 @@ font-size: 1rem;
 width: 35%;
 padding: 1.5rem;
 margin: 0;
-line-height: 1.5;
+/* line-height: 1.5; */
 
 }
 
@@ -280,6 +292,7 @@ width: 1140px;
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 4rem;
 
 }
 
@@ -317,13 +330,12 @@ width: 1140px;
 
 .course-article h2 {
 
-  font-size: 1.625rem;
-  font-weight: 600;
+
   margin: 0 0 1rem 0;
 
 }
 
-h2 a:hover, .read-more:hover {
+h2 a:hover, .read-more:hover, .read-more-blue:hover {
 
   text-decoration: underline;
 }
@@ -356,5 +368,104 @@ outline-offset: 0.10em;
 .course-article p {
 
   margin: 2rem 0 2rem 0;
-  line-height: 1.5;
+  /* line-height: 1.5; */
+}
+
+.options-container, .options {
+
+  width: 100%;
+}
+
+.options {
+
+  display: flex;
+  justify-content: center;
+}
+
+.heading-container {
+
+  display: flex;
+  justify-content: center;
+  color: #0066B9;
+}
+
+.heading-container h2 {
+
+  margin: 0 0 2rem 0;
+}
+
+.options-article-container {
+
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.options-article {
+
+  width: 32.456%;
+  background-color: #EAEDF0;
+  color: #fff;
+  border-bottom: 4px solid #0066B9;
+  margin-bottom: 1rem;
+
+}
+
+.options-img {
+
+width: 100%;
+height: 170px;
+
+}
+
+.options-content {
+
+ padding: 2rem;
+ color: #343434;
+
+}
+
+.options-content a {
+
+  text-decoration: none;
+  color:#0066B9;
+  font-weight: 600;
+}
+
+.options-content h3 {
+
+  font-weight: 600;
+  color: #0066B9;
+  margin: 0 0 1rem 0;
+}
+
+#micro {
+
+  background-image: url(https://online.qut.edu.au/wp-content/uploads/New-Years-resolution-tips.gif);
+  background-position: center;
+  background-size: cover;
+
+}
+
+#single {
+
+  background-image: url(https://online.qut.edu.au/wp-content/uploads/StudentAdvisor.gif);
+  background-position: center;
+  background-size: cover;
+
+}
+
+#degrees {
+
+  background-image: url(https://online.qut.edu.au/wp-content/uploads/Positive-change-postgrad-study.gif);
+  background-position: center;
+  background-size: cover;
+
+}
+
+.read-more-blue:focus {
+
+outline: solid 2px #0066B9;
+outline-offset: 0.10em;
+
 }
