@@ -249,6 +249,7 @@ line-height: 1.5;
 
   text-decoration: none;
   color: #0066B9;
+  padding: 0.25em;
 }
 
 #breadcrumbs a:hover, #breadcrumbs a:focus {
@@ -293,6 +294,7 @@ width: 1140px;
 .course-article {
 
   width: 32.456%;
+  /* min-height: 480px; */
   background-color: #2A60A1;
   color: #fff;
   padding: 2rem;
@@ -305,6 +307,7 @@ width: 1140px;
 
   color: #fff;
   text-decoration: none;
+
 }
 
 .read-more {
@@ -317,6 +320,19 @@ width: 1140px;
   font-size: 1.625rem;
   font-weight: 600;
   margin: 0 0 1rem 0;
+
+}
+
+h2 a:hover, .read-more:hover {
+
+  text-decoration: underline;
+}
+
+h2 a:focus, .read-more:focus {
+
+outline: solid 2px #fff;
+outline-offset: 0.10em;
+
 }
 
 .category-pill {
@@ -327,6 +343,14 @@ width: 1140px;
   background-color: #003B71;
   border-radius: 0.6em;
 
+}
+
+.category-pill:hover, .category-pill:focus {
+
+  background-color: #EAEDF0;
+  color: #0066B9;
+  font-weight: 600;
+  outline: none;
 }
 
 .course-article p {
