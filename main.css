@@ -14,6 +14,28 @@ body {
   background-color: #f9f9f9;
 }
 
+#skip-link {
+
+  position: absolute;
+  top: -120%;
+}
+
+#skip-link:focus {
+
+  color: #fff;
+  top: 0;
+  left: 120%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0066B9;
+  padding: 0.2em;
+  margin-top: 0.1em;
+  outline: solid 1px #fff;
+
+}
+
 header {
 
   background-color: blue;
@@ -48,6 +70,7 @@ p {
 .logo-container {
 
   width: 180px;
+  position: relative;
 
 }
 
@@ -111,7 +134,7 @@ header a:focus {
 }
 
 
-#main-nav a {
+#main-nav a, #drop-menu {
 
   font-size: 1.25rem;
   height: 100%;
@@ -122,13 +145,57 @@ header a:focus {
   color: #fff;
   font-weight: 800;
   text-decoration: none;
+  border: none;
 }
 
-#main-nav a:focus, #main-nav a:hover {
+
+
+#drop-menu {
+
+  background-color: #00467f;
+  padding: 0 0.833em;
+  cursor: pointer;
+  height: 3.769375rem;
+
+}
+
+#drop-menu-li {
+
+position: relative;
+
+}
+
+.flyout {
+
+  position: absolute;
+  background-color: #E8EEF3;
+  top: 60px;
+  display: none;
+  width: 300px;
+  box-shadow: 0 4px 4px 4px rgba(0,0,0,0.15);
+
+}
+
+.flyout li {
+
+  display: block;
+}
+
+#main-nav a:focus, #main-nav a:hover, #drop-menu:hover, #drop-menu:focus {
 
 background-color: #fff;
 color: #0066B9;
 outline: none;
+
+}
+
+.flyout-a {
+
+  font-size: 1.1rem !important;
+  padding: 0.833em 0.833em 0.833em 1em !important;
+  color: #0066B9 !important;
+  font-weight: 800 !important;
+  text-decoration: none;
 
 }
 
@@ -610,6 +677,7 @@ padding-left: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .right a {
@@ -618,7 +686,7 @@ padding-left: 5%;
   background-color: #fff;
   color: #0066B9;
   font-weight: 600;
-  padding: 1em;
+  padding: 1em 2em;
 }
 
 .right a:hover, .right a:focus {
@@ -626,5 +694,66 @@ padding-left: 5%;
   background-color: #0d284b;
   color: #fff;
   border: 2px solid #fff;
+
+}
+
+@media screen and (max-width:1198px) {
+
+.wrapper, .image-header, #breadcrumb-wrapper, .courses, .options-article-container {
+
+  width: 95%;
+}
+
+}
+
+@media screen and (max-width: 1045px) {
+
+  .category-pill {
+
+    display: block;
+  }
+}
+
+@media screen and (max-width:960px) {
+
+  .image-header h1, #hero-header-p {
+
+  width: 100%;
+
+  }
+
+  .hero-image {
+
+    align-items: flex-start;
+    padding: 2rem 0 2rem 0;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 960px) {
+
+  .course-article, .options-article {
+
+    width: 48.8%;
+  }
+
+  .category-pill {
+
+    display: initial;
+  }
+
+  .options-article-container {
+
+    flex-wrap: wrap;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+
+  .course-article, .options-article {
+
+    width: 100%;
+  }
 
 }
