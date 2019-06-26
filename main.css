@@ -564,7 +564,7 @@ footer i {
 .social-and-contact-inner, .legal-inner {
 
   width: 1140px;
-  padding: 3rem 1.5rem;
+  padding: 3rem 0;
 
 
 }
@@ -590,5 +590,41 @@ footer i {
 
 .social-and-contact-inner {
 
-  /* padding: 4rem 0; */
+display: flex;
+
+}
+
+.contact {
+
+  width: 33.33%
+}
+
+.middle {
+
+padding-left: 5%;
+
+}
+
+.right {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right a {
+
+  text-decoration: none;
+  background-color: #fff;
+  color: #0066B9;
+  font-weight: 600;
+  padding: 1em;
+}
+
+.right a:hover, .right a:focus {
+
+  background-color: #0d284b;
+  color: #fff;
+  border: 2px solid #fff;
+
 }
