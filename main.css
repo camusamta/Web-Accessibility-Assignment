@@ -183,7 +183,7 @@ position: relative;
 
 #main-nav a:focus, #main-nav a:hover, #drop-menu:hover, #drop-menu:focus {
 
-background-color: #fff;
+background-color: #fff !important;
 color: #0066B9;
 outline: none;
 
