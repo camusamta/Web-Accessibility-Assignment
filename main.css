@@ -36,6 +36,15 @@ body {
 
 }
 
+#hamburger {
+
+  display: none;
+  color: #fff;
+  background-color: #00467f;
+  font-size: 2rem;
+  border: none;
+}
+
 header {
 
   background-color: blue;
@@ -249,7 +258,7 @@ input::placeholder {
 
 input:focus {
 
-  outline-color: #b8296d;
+  outline-color: #7d9dba;
   outline-style: solid;
   outline-width: 4px;
   z-index: 1;
@@ -262,12 +271,16 @@ height: 40px;
 width: 48px;
 background-color: #0066B9;
 border-radius: 0 4px 4px 0;
+cursor: pointer;
 
 }
 
-form button:hover, form button:focus {
+form button:focus {
 
-  /* this needs something */
+  outline-color: #fff;
+  outline-style: solid;
+  outline-width: 2px;
+  z-index: 1;
 
 }
 
@@ -699,7 +712,7 @@ padding-left: 5%;
 
 @media screen and (max-width:1198px) {
 
-.wrapper, .image-header, #breadcrumb-wrapper, .courses, .options-article-container {
+.wrapper, .social-and-contact-inner, .image-header, #breadcrumb-wrapper, .courses, .options-article-container {
 
   width: 95%;
 }
@@ -716,7 +729,7 @@ padding-left: 5%;
 
 @media screen and (max-width:960px) {
 
-  .image-header h1, #hero-header-p {
+  .image-header h1, .image-header h2, .application-header, .link-container, #hero-header-p {
 
   width: 100%;
 
@@ -749,11 +762,95 @@ padding-left: 5%;
 
 }
 
+@media screen and (max-width: 950px) {
+
+  #skip-link:focus {
+
+    top: 50%;
+  }
+
+}
+
+@media screen and (max-width: 941px) {
+
+.main-nav-left ul {
+
+  display: none;
+}
+
+#hamburger {
+
+  display: initial;
+}
+
+}
+
+@media screen and (max-width: 733px) {
+
+  .helpful-links-container ul {
+
+    display: none;
+  }
+
+  #skip-link {
+
+    display: none;
+  }
+}
+
 @media screen and (max-width: 700px) {
 
   .course-article, .options-article {
 
     width: 100%;
   }
+
+
+.social-and-contact-inner {
+
+  flex-direction: column;
+    padding: 1.5rem 0;
+
+}
+
+.left {
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8rem;
+}
+
+.left h2, .social-container {
+
+  margin: auto;
+}
+
+.social-container {
+
+  padding-top: 0.5rem;
+}
+
+.middle {
+
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  /* margin-bottom: 0.8rem; */
+}
+
+.contact {
+
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+.right a:focus, .right a:hover {
+
+  outline-color: #fff;
+  border: 1px;
+}
+
+
 
 }
