@@ -854,3 +854,24 @@ padding-left: 5%;
 
 
 }
+
+@media screen and (max-width: 480px) {
+
+  .middle {
+
+  flex-direction: column;
+  align-items: center;
+
+  }
+
+  .middle p:first-child {
+
+    margin: 0;
+  }
+
+  .middle p:last-child {
+
+  margin-top: 0;
+
+  }
+}
