@@ -1,7 +1,7 @@
 # Web Accessibility Assignment
 
-##Builder
+## Builder
 Sam Hobson
 
-##Testers
+## Testers
 Maxine Balzat, Daniele Corciulo, Sam Hobson
